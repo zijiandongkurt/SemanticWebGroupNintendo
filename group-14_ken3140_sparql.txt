@@ -19,7 +19,7 @@ LIMIT 1
 
 Results: (one of possible results)
 
-Name:  Nintendo Switch Sports
+Name:  Nintendo Switch (neonblauw/neonrood) Animal Crossing: New Horizons-bundel
 Category:  consoles
 Subcategory:  nintendo-switch-bundles
 Brand:  Nintendo
@@ -139,7 +139,7 @@ price:  429.99
 ------------
 We only have one brand Nintendo:
 
-Query E: 
+Query E: (send to https://query.wikidata.org/sparql)
 
 SELECT ?property ?propertyLabel (SAMPLE(?value) as ?sampleValue) (SAMPLE(?valueLabel) as ?sampleValueLabel)
 WHERE {
@@ -147,11 +147,12 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
   FILTER (?property IN (wdt:P154, wdt:P159, wdt:P169,  wdt:P452,  wdt:P1448))
   
+  #Q8093: Nintendo
   #154: logo image
   #159: headquarters location
+  #169: chief executive officer
   #452: industry
   #1448: official name
-  #169: chief executive officer
 }
 GROUP BY ?property ?propertyLabel
 
@@ -199,11 +200,14 @@ With category:  games
 
 G Question: what are the price of Switch? list their prices from low to high.
 
+Why this query would be valuable in a webshop setting, such as for semantic search or other applications:
+Since the core of Nintendo game series is to have a Switch, this query allows you to get all the items that include a Switch, whether it's a single machine or an bundle. When users want to buy a switch, a very important factor that determines which one they buy is the price. Providing all the prices of the switches and their bundles will make it easy for them to check.
+
 Query G: 
 
 SELECT ?name  ?price
   WHERE {
-    ?switch     schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles>.
+    ?switch schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles>.
     ?switch schema:name ?name .
     ?switch schema:price ?price .
 }
@@ -211,6 +215,7 @@ ORDER BY ?price   #sort by price
 
 
 Results:
+
 Name:  Nintendo Switch met neonblauwe/neonrode Joy-Con-controllers
 Price:  299.99
 Name:  Nintendo Switch – OLED-Model Mario Edition (rood)
