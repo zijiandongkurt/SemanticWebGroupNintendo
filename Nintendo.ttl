@@ -116,7 +116,7 @@ NS:kirbys-return-to-dream-land-deluxe-muismat-000000000010011641 schema:brand "N
     schema:name "Kirby's Return to Dream Land Deluxe-muismat" ;
     schema:price 0e+00 ;
     schema:product NS:franchises,
-        NS:merchandise ;
+        <https://store.nintendo.nl/nl/merchandise/apparel> ;
     schema:sku "000000000010011641" .
 
 NS:knuffel-mario-tanuki-nintendo-tokyo-exclusive-collection-000000000010004851 schema:brand "Nintendo" ;
@@ -394,15 +394,15 @@ Bestel en ontvang een GRATIS notitieboekje (zolang de voorraad strekt)._x000D_
     schema:product NS:games ;
     schema:sku "70010000053337" .
 
-<https://store.nintendo.nl/nl/consoles/accessories> schema:isAccessoryOrSparePartFor NS:consoles .
-
-NS:consoles a "Nintendo" .
+<https://store.nintendo.nl/nl/consoles/accessories> rdfs:subClassOf NS:consoles .
 
 NS:merchandise a "Nintendo" .
 
-<https://store.nintendo.nl/nl/merchandise/apparel> rdfs:subClassOf NS:merchandise .
+NS:consoles a "Nintendo" .
 
 <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> rdfs:subClassOf NS:consoles .
+
+<https://store.nintendo.nl/nl/merchandise/apparel> rdfs:subClassOf NS:merchandise .
 
 <https://store.nintendo.nl/nl/merchandise/home-and-gifts> rdfs:subClassOf NS:merchandise .
 
