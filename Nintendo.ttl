@@ -245,7 +245,7 @@ NS:nintendo-switch-sports-P00086 schema:brand "Nintendo" ;
     schema:description "Zwaai, trap en smash je een weg naar de overwinning met Nintendo Switch Sports, een verzameling sporten voor de Nintendo Switch die je flink in beweging houdt!" ;
     schema:name "Nintendo Switch Sports" ;
     schema:price 3.999e+01 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> ;
+    schema:product NS:games ;
     schema:sku "P00086" .
 
 NS:pikmin-4-70010000005306 schema:brand "Nintendo" ;
