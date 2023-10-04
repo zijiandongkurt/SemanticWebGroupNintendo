@@ -222,8 +222,8 @@ NS:nintendo-switch-oled-model-the-legend-of-zelda-tears-of-the-kingdom-edition-t
     schema:description "Deze systeembundel bevat de Nintendo Switch – OLED-model The Legend of Zelda: Tears of the Kingdom Edition, de game The Legend of Zelda: Tears of the Kingdom, en een Nintendo Switch-hardcase - Deluxe Elite Edition." ;
     schema:name "Nintendo Switch – OLED-model The Legend of Zelda: Tears of the Kingdom Edition + The Legend of Zelda: Tears of the Kingdom-bundel" ;
     schema:price 4.2999e+02 ;
-    schema:product NS:franchises,
-        NS:games,
+    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles>,
+        NS:franchises,
         NS:new ;
     schema:sku "B00396" .
 
@@ -245,7 +245,7 @@ NS:nintendo-switch-sports-P00086 schema:brand "Nintendo" ;
     schema:description "Zwaai, trap en smash je een weg naar de overwinning met Nintendo Switch Sports, een verzameling sporten voor de Nintendo Switch die je flink in beweging houdt!" ;
     schema:name "Nintendo Switch Sports" ;
     schema:price 3.999e+01 ;
-    schema:product NS:games ;
+    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> ;
     schema:sku "P00086" .
 
 NS:pikmin-4-70010000005306 schema:brand "Nintendo" ;
@@ -396,13 +396,13 @@ Bestel en ontvang een GRATIS notitieboekje (zolang de voorraad strekt)._x000D_
 
 <https://store.nintendo.nl/nl/consoles/accessories> schema:isAccessoryOrSparePartFor NS:consoles .
 
-<https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> rdfs:subClassOf NS:consoles .
-
 NS:consoles a "Nintendo" .
 
 NS:merchandise a "Nintendo" .
 
 <https://store.nintendo.nl/nl/merchandise/apparel> rdfs:subClassOf NS:merchandise .
+
+<https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> rdfs:subClassOf NS:consoles .
 
 <https://store.nintendo.nl/nl/merchandise/home-and-gifts> rdfs:subClassOf NS:merchandise .
 
