@@ -6,57 +6,145 @@ SPARQL results
 
 Query A: 
 
+ SELECT ?name ?subcategory ?category ?brand
+  WHERE {
+    ?item schema:price ?price .
+   # FILTER (?price >= 0 && ?price <= 1000)        #We select all items by using price range
 
--- INSERT SPARQL FORMULATION OF YOUR QUERY--
+    ?item schema:brand ?brand .                   #Get the brand
+    ?item schema:name ?name.                      #Get item name
+    ?item schema:product ?subcategory.            #Get the category.
+
+    OPTIONAL {?subcategory rdfs:subClassOf ?category }    # if there exist subcategory, also get it.
+  }
+
+
+ORDER BY RAND()
+LIMIT 1
 
 
 Results:
-
-
-------
-------
-
-Query A: 
-
-
--- INSERT SPARQL FORMULATION OF YOUR QUERY--
-
-
-Results:
-
+Name:  Nintendo Switch Sports
+Category:  https://store.nintendo.nl/nl/games
+Brand:  Nintendo
 
 ------------
 
 Query B: 
 
+  SELECT ?name ?subcategory
+  WHERE {
 
--- INSERT SPARQL FORMULATION OF YOUR QUERY--
+                {
+                    #SAMPLE: We choose 1 item from each subcategory
+                    SELECT DISTINCT ?subcategory (SAMPLE(?item) AS ?sampleItem)
+                    WHERE {
+                      ?item schema:brand ?brand . #choose same brand
+                      ?item schema:name ?name .
+                      ?item schema:product ?subcategory .
+                    }
+                    GROUP BY ?subcategory
 
+
+                 }
+    ?sampleItem schema:brand ?brand .
+    ?sampleItem schema:name ?name .
+    ?sampleItem schema:product ?subcategory .
+  }
+
+
+ORDER BY RAND()
+LIMIT 10
 
 Results:
-
+Name:  Another Code: Recollection
+subCategory:  https://store.nintendo.nl/nl/new
+Name:  Kirby's Return to Dream Land Deluxe-muismat
+subCategory:  https://store.nintendo.nl/nl/franchises
+Name:  Nintendo Switch met neonblauwe/neonrode Joy-Con-controllers
+subCategory:  https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles
+Name:  Kirby's Return to Dream Land Deluxe-muismat
+subCategory:  https://store.nintendo.nl/nl/merchandise
+Name:  Kirby's Dream Buffet-sleutelhanger
+subCategory:  https://store.nintendo.nl/nl/merchandise/apparel
+Name:  Nintendo Switch (neonblauw/neonrood) Animal Crossing: New Horizons-bundel
+subCategory:  https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles
+Name:  Animal Crossing: New Horizons
+subCategory:  https://store.nintendo.nl/nl/games
+Name:  Game Boy-posterset
+subCategory:  https://store.nintendo.nl/nl/merchandise/home-and-gifts
+Name:  Beenband
+subCategory:  https://store.nintendo.nl/nl/consoles/accessories
 
 ------------
 
 Query C: 
 
 
--- INSERT SPARQL FORMULATION OF YOUR QUERY--
-
+      SELECT ?brand (AVG(?price) AS ?averagePrice)
+        WHERE {
+          ?item schema:brand ?brand .
+          ?item schema:price ?price .
+        }
+        GROUP BY ?brand
 
 Results:
-
+Brand:  Nintendo
+Average Price:  101.22698113207538
 
 ------------
 
 Query D: 
 
+      SELECT ?item ?category ?price
+        WHERE {
 
--- INSERT SPARQL FORMULATION OF YOUR QUERY--
+
+            {
+              #Here we choose a random category
+              SELECT ?category
+                WHERE {
+                  ?item schema:product ?category .
+                }
+                ORDER BY RAND()
+                LIMIT 1
+            }
+
+        ?item schema:product ?category.    #Get all items within that category
+        ?item schema:price ?price .
+
+        }
+        ORDER BY ?price   #sort by price
 
 
 Results:
-
+category:  https://store.nintendo.nl/nl/new
+item:  https://store.nintendo.nl/nl/pikmin-4-theedoek-000000000010012315
+price:  0.0
+category:  https://store.nintendo.nl/nl/new
+item:  https://store.nintendo.nl/nl/https://www.nintendo.nl/Games/Nintendo-Switch-games/Metroid-Prime-Remastered-2341668.html
+price:  39.99
+category:  https://store.nintendo.nl/nl/new
+item:  https://store.nintendo.nl/nl/minecraft-legends-deluxe-edition-P00106
+price:  49.99
+category:  https://store.nintendo.nl/nl/new
+item:  https://store.nintendo.nl/nl/fae-farm-P00115
+price:  59.99
+category:  https://store.nintendo.nl/nl/new
+item:  https://store.nintendo.nl/nl/super-mario-rpg-70010000068684
+price:  59.99
+category:  https://store.nintendo.nl/nl/new
+item:  https://store.nintendo.nl/nl/pikmin-4-70010000005306
+price:  59.99
+category:  https://store.nintendo.nl/nl/new
+item:  https://store.nintendo.nl/nl/another-code-recollection-70010000072197
+price:  59.99
+category:  https://store.nintendo.nl/nl/new
+item:  https://store.nintendo.nl/nl/princess-peach-showtime-70010000005021
+price:  59.99
+category:  https://store.nintendo.nl/nl/new
+item:  https://store.nintendo.nl/nl/nintendo-switch-oled-model-the-legend-of-zelda-tears-of-the-kingdom-edition-the-legend-of-zelda-tears-of-the-kingdom-bundel-B00396
+price:  429.99
 
 ------------
 
@@ -74,25 +162,66 @@ Results:
 Query F: 
 
 
--- INSERT SPARQL FORMULATION OF YOUR QUERY--
+SELECT DISTINCT ?name1 ?name2 ?price1 ?price2 ?category
+        WHERE {
+            ?item1 schema:price ?price1.
+            ?item2 schema:price ?price2.
 
+            # recommand item with similar price:
+            ?item1 schema:name ?name1.
+            ?item2 schema:name ?name2.
+
+
+            ?item1 schema:product ?category.
+            ?item2 schema:product ?category.
+
+        FILTER (ABS(?price1 - ?price2) <= 1)
+
+        }
+        ORDER BY RAND()
+        Limit 1
 
 Results:
-
+item:  Pikmin 4
+price:  59.99
+category:  https://store.nintendo.nl/nl/games
+similar item:  Metroid Dread
+With price:  59.99
+With category:  https://store.nintendo.nl/nl/games
 
 ------
 ------------
 
 Query G: 
 
--- INSERT TEST OF YOUR QUERY QUESTION -
+Question: what are the price of Switch? list their prices from low to high.
 
 
--- INSERT SPARQL FORMULATION OF YOUR QUERY--
 
+      SELECT ?name  ?price
+        WHERE {
+          ?switch     schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles>.
+          ?switch schema:name ?name .
+          ?switch schema:price ?price .
+
+        }
+       ORDER BY ?price   #sort by price
 
 Results:
-
+Name:  Nintendo Switch met neonblauwe/neonrode Joy-Con-controllers
+Price:  299.99
+Name:  Nintendo Switch – OLED-Model Mario Edition (rood)
+Price:  349.99
+Name:  Nintendo Switch - OLED-model (neonblauw/neonrood)
+Price:  349.99
+Name:  Nintendo Switch - OLED-model (wit)
+Price:  349.99
+Name:  Nintendo Switch – OLED Model Pokémon Scarlet & Violet Edition
+Price:  359.99
+Name:  Nintendo Switch™ – OLED-Model Splatoon 3 Edition
+Price:  359.99
+Name:  Nintendo Switch – OLED-model The Legend of Zelda: Tears of the Kingdom Edition 
+Price:  359.99
 
 
 -----------------------------------------------------------------------------------------------------------------------------
