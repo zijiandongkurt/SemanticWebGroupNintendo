@@ -31,7 +31,7 @@ NS:bayonetta-3-70010000046401 a schema:Product ;
 NS:beenband-000000000010001376 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Het beenbandaccessoire meet je acties in de echte wereld en zet ze om in bewegingen in de game." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/accessories> ;
+    schema:item NS:accessories ;
     schema:name "Beenband" ;
     schema:price 1.099e+01 ;
     schema:sku "000000000010001376" .
@@ -63,7 +63,7 @@ NS:challenger-pack-van-min-min-70050000018967 a schema:Product ;
 <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles/nintendo-switch/nintendo-switch-met-neonblauweneonrode-joy-con-controllers-000000000010002207> a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Nintendo Switch is een baanbrekend spelsysteem voor thuis. Voor het eerst kunnen spelers altijd en overal genieten van een volledige spelsysteemervaring thuis." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
+    schema:item NS:nintendo-switch-consoles ;
     schema:name "Nintendo Switch met neonblauwe/neonrode Joy-Con-controllers" ;
     schema:price 2.9999e+02 ;
     schema:sku "000000000010002207" .
@@ -80,7 +80,7 @@ NS:fae-farm-P00115 a schema:Product ;
 NS:game-boy-posterset-000000000010011600 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Geef je muren een retro uitstraling met deze Game Boy-posterset met daarop drie klassieke games!" ;
-    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
+    schema:item NS:home-and-gifts ;
     schema:name "Game Boy-posterset" ;
     schema:price 0e+00 ;
     schema:sku "000000000010011600" .
@@ -105,7 +105,7 @@ NS:gamestudio-P00075 a schema:Product ;
 NS:kirby-speelkaarten-000000000010001931 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Speelkaarten van Kirby en zijn vrienden!" ;
-    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
+    schema:item NS:home-and-gifts ;
     schema:name "Kirby Speelkaarten" ;
     schema:price 1.749e+01 ;
     schema:sku "000000000010001931" .
@@ -113,7 +113,7 @@ NS:kirby-speelkaarten-000000000010001931 a schema:Product ;
 NS:kirbys-dream-buffet-sleutelhanger-000000000010010992 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Met deze schattige Kirby-sleutelhanger, die is geïnspireerd op Kirby's Dream Buffet, zie je er smaakvol uit!" ;
-    schema:item <https://store.nintendo.nl/nl/merchandise/apparel> ;
+    schema:item NS:apparel ;
     schema:name "Kirby's Dream Buffet-sleutelhanger" ;
     schema:price 0e+00 ;
     schema:sku "000000000010010992" .
@@ -129,8 +129,8 @@ NS:kirbys-return-to-dream-land-deluxe-70010000058798 a schema:Product ;
 NS:kirbys-return-to-dream-land-deluxe-muismat-000000000010011641 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Waan je op de planeet Popstar met deze Kirby’s Return to Dream Land Deluxe-muismat, waarop de roze held in eigen persoon prijkt!" ;
-    schema:item NS:franchises,
-        <https://store.nintendo.nl/nl/merchandise/apparel> ;
+    schema:item NS:apparel,
+        NS:franchises ;
     schema:name "Kirby's Return to Dream Land Deluxe-muismat" ;
     schema:price 0e+00 ;
     schema:sku "000000000010011641" .
@@ -138,7 +138,7 @@ NS:kirbys-return-to-dream-land-deluxe-muismat-000000000010011641 a schema:Produc
 NS:knuffel-mario-tanuki-nintendo-tokyo-exclusive-collection-000000000010004851 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Vier het 35-jarig jubileum van Super Mario Bros. met deze Knuffel Mario Tanuki, exclusief verkrijgbaar in My Nintendo Store." ;
-    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
+    schema:item NS:home-and-gifts ;
     schema:name "Knuffel Mario Tanuki - Nintendo Tokyo Exclusive Collection" ;
     schema:price 2.499e+01 ;
     schema:sku "000000000010004851" .
@@ -146,7 +146,7 @@ NS:knuffel-mario-tanuki-nintendo-tokyo-exclusive-collection-000000000010004851 a
 NS:knuffel-propeller-mario-nintendo-tokyo-exclusive-collection-000000000010004852 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Vier het 35-jarig jubileum van Super Mario Bros. met deze Knuffel Propeller-Mario, exclusief verkrijgbaar in de My Nintendo Store." ;
-    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
+    schema:item NS:home-and-gifts ;
     schema:name "Knuffel Propeller-Mario – Nintendo Tokyo Exclusive Collection" ;
     schema:price 2.499e+01 ;
     schema:sku "000000000010004852" .
@@ -187,7 +187,7 @@ NS:monster-hunter-rise-70010000029015 a schema:Product ;
 NS:nintendo-64-paperclips-000000000010009889 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Deze paperclips in de vorm van Nintendo 64-controllers zijn nu exclusief verkrijgbaar op My Nintendo!" ;
-    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
+    schema:item NS:home-and-gifts ;
     schema:name "Nintendo 64-paperclips" ;
     schema:price 0e+00 ;
     schema:sku "000000000010009889" .
@@ -195,7 +195,7 @@ NS:nintendo-64-paperclips-000000000010009889 a schema:Product ;
 NS:nintendo-switch-neonblauwneonrood-animal-crossing-new-horizons-bundel-B00403 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Deze systeembundel bevat de Nintendo Switch met neonblauw/neonrood Joy-Con-controllers, de game Animal Crossing: New Horizons, en een Nintendo Switch-hardcase - Deluxe Elite Edition." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> ;
+    schema:item NS:nintendo-switch-bundles ;
     schema:name "Nintendo Switch (neonblauw/neonrood) Animal Crossing: New Horizons-bundel" ;
     schema:price 3.5999e+02 ;
     schema:sku "B00403" .
@@ -203,7 +203,7 @@ NS:nintendo-switch-neonblauwneonrood-animal-crossing-new-horizons-bundel-B00403 
 NS:nintendo-switch-neonblauwneonrood-luigis-mansion-3-bundel-B00418 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Deze Nintendo Switch met neonblauwe/neonrode Joy-Con-controllers wordt geleverd met een downloadcode voor Luigi's Mansion 3, plus een Nintendo Switch-hardcase - Deluxe Elite Edition." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> ;
+    schema:item NS:nintendo-switch-bundles ;
     schema:name "Nintendo Switch (neonblauw/neonrood) Luigi's Mansion 3-bundel" ;
     schema:price 3.5999e+02 ;
     schema:sku "B00418" .
@@ -211,7 +211,7 @@ NS:nintendo-switch-neonblauwneonrood-luigis-mansion-3-bundel-B00418 a schema:Pro
 NS:nintendo-switch-oled-model-mario-edition-rood-000000000010011772 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een levendig 7-inch OLED-scherm met levendige kleuren." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
+    schema:item NS:nintendo-switch-consoles ;
     schema:name "Nintendo Switch – OLED-Model Mario Edition (rood)" ;
     schema:price 3.4999e+02 ;
     schema:sku "000000000010011772" .
@@ -219,7 +219,7 @@ NS:nintendo-switch-oled-model-mario-edition-rood-000000000010011772 a schema:Pro
 NS:nintendo-switch-oled-model-neonblauwneonrood-000000000010007455 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een OLED-scherm van 7 inch met levendige kleuren." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
+    schema:item NS:nintendo-switch-consoles ;
     schema:name "Nintendo Switch - OLED-model (neonblauw/neonrood)" ;
     schema:price 3.4999e+02 ;
     schema:sku "000000000010007455" .
@@ -227,7 +227,7 @@ NS:nintendo-switch-oled-model-neonblauwneonrood-000000000010007455 a schema:Prod
 NS:nintendo-switch-oled-model-pokemon-scarlet-and-violet-edition-000000000010009862 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een levendig 7-inch OLED-scherm met levendige kleuren." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
+    schema:item NS:nintendo-switch-consoles ;
     schema:name "Nintendo Switch – OLED Model Pokémon Scarlet & Violet Edition" ;
     schema:price 3.5999e+02 ;
     schema:sku "000000000010009862" .
@@ -235,7 +235,7 @@ NS:nintendo-switch-oled-model-pokemon-scarlet-and-violet-edition-000000000010009
 NS:nintendo-switch-oled-model-splatoon-3-edition-000000000010009642 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een levendig 7-inch OLED-scherm met levendige kleuren." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
+    schema:item NS:nintendo-switch-consoles ;
     schema:name "Nintendo Switch™ – OLED-Model Splatoon 3 Edition" ;
     schema:price 3.5999e+02 ;
     schema:sku "000000000010009642" .
@@ -243,7 +243,7 @@ NS:nintendo-switch-oled-model-splatoon-3-edition-000000000010009642 a schema:Pro
 NS:nintendo-switch-oled-model-the-legend-of-zelda-tears-of-the-kingdom-edition-000000000010009866 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een levendig 7-inch OLED-scherm met levendige kleuren." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
+    schema:item NS:nintendo-switch-consoles ;
     schema:name "Nintendo Switch – OLED-model The Legend of Zelda: Tears of the Kingdom Edition " ;
     schema:price 3.5999e+02 ;
     schema:sku "000000000010009866" .
@@ -251,9 +251,9 @@ NS:nintendo-switch-oled-model-the-legend-of-zelda-tears-of-the-kingdom-edition-0
 NS:nintendo-switch-oled-model-the-legend-of-zelda-tears-of-the-kingdom-edition-the-legend-of-zelda-tears-of-the-kingdom-bundel-B00396 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Deze systeembundel bevat de Nintendo Switch – OLED-model The Legend of Zelda: Tears of the Kingdom Edition, de game The Legend of Zelda: Tears of the Kingdom, en een Nintendo Switch-hardcase - Deluxe Elite Edition." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles>,
-        NS:franchises,
-        NS:new ;
+    schema:item NS:franchises,
+        NS:new,
+        NS:nintendo-switch-bundles ;
     schema:name "Nintendo Switch – OLED-model The Legend of Zelda: Tears of the Kingdom Edition + The Legend of Zelda: Tears of the Kingdom-bundel" ;
     schema:price 4.2999e+02 ;
     schema:sku "B00396" .
@@ -261,7 +261,7 @@ NS:nintendo-switch-oled-model-the-legend-of-zelda-tears-of-the-kingdom-edition-t
 NS:nintendo-switch-oled-model-wit-000000000010007454 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een levendig 7-inch OLED-scherm met levendige kleuren." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
+    schema:item NS:nintendo-switch-consoles ;
     schema:name "Nintendo Switch - OLED-model (wit)" ;
     schema:price 3.4999e+02 ;
     schema:sku "000000000010007454" .
@@ -269,7 +269,7 @@ NS:nintendo-switch-oled-model-wit-000000000010007454 a schema:Product ;
 NS:nintendo-switch-pro-controller-the-legend-of-zelda-tears-of-the-kingdom-edition-000000000010009831 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Deze Nintendo Switch-Pro-controller heeft een design dat is geïnspireerd door The Legend of Zelda: Tears of the Kingdom." ;
-    schema:item <https://store.nintendo.nl/nl/consoles/accessories> ;
+    schema:item NS:accessories ;
     schema:name "Nintendo Switch-Pro-controller (The Legend of Zelda: Tears of the Kingdom Edition)" ;
     schema:price 7.499e+01 ;
     schema:sku "000000000010009831" .
@@ -294,7 +294,7 @@ NS:pikmin-4-70010000005306 a schema:Product ;
 NS:pikmin-4-theedoek-000000000010012315 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Laat de Pikmin meehelpen bij het afdrogen met deze Pikmin 4-theedoek!" ;
-    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts>,
+    schema:item NS:home-and-gifts,
         NS:new ;
     schema:name "Pikmin 4-theedoek" ;
     schema:price 0e+00 ;
@@ -381,7 +381,7 @@ NS:super-mario-bros-wonder-70010000068689 a schema:Product ;
 NS:super-mario-draagtas-000000000010012062 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Spring je volgende avontuur tegemoet met deze Super Mario-tas om je arm!" ;
-    schema:item <https://store.nintendo.nl/nl/merchandise/apparel> ;
+    schema:item NS:apparel ;
     schema:name "Super Mario-draagtas" ;
     schema:price 0e+00 ;
     schema:sku "000000000010012062" .
@@ -407,8 +407,8 @@ NS:super-mario-rpg-70010000068684 a schema:Product ;
 NS:t-shirt-splatoon-3-splatfest-water-P00101 a schema:Product ;
     schema:brand "Nintendo" ;
     schema:description "Laat de wereld met dit T-shirt Splatoon 3 Splatfest 'Water' zien welke kant jij kiest in het Splatfest Splatoon x Pokémon." ;
-    schema:item NS:franchises,
-        <https://store.nintendo.nl/nl/merchandise/apparel> ;
+    schema:item NS:apparel,
+        NS:franchises ;
     schema:name "T-shirt Splatoon 3 Splatfest 'Water'" ;
     schema:price 1.999e+01 ;
     schema:sku "P00101" .
@@ -447,21 +447,21 @@ Bestel en ontvang een GRATIS notitieboekje (zolang de voorraad strekt)._x000D_\r
     schema:price 5.999e+01 ;
     schema:sku "70010000053337" .
 
-<https://store.nintendo.nl/nl/consoles/accessories> rdfs:subClassOf NS:consoles .
+NS:accessories rdfs:subClassOf NS:consoles .
 
 NS:merchandise a schema:ProductGroup .
 
 NS:consoles a schema:ProductGroup .
 
-<https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> rdfs:subClassOf NS:consoles .
+NS:nintendo-switch-bundles rdfs:subClassOf NS:consoles .
 
-<https://store.nintendo.nl/nl/merchandise/apparel> rdfs:subClassOf NS:merchandise .
+NS:apparel rdfs:subClassOf NS:merchandise .
 
-<https://store.nintendo.nl/nl/merchandise/home-and-gifts> rdfs:subClassOf NS:merchandise .
-
-<https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> rdfs:subClassOf NS:consoles .
+NS:home-and-gifts rdfs:subClassOf NS:merchandise .
 
 NS:franchises a schema:ProductGroup .
+
+NS:nintendo-switch-consoles rdfs:subClassOf NS:consoles .
 
 NS:new a schema:ProductGroup .
 
