@@ -3,402 +3,455 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-NS:animal-crossing-new-horizons-70010000027620 schema:brand "Nintendo" ;
+NS:animal-crossing-new-horizons-70010000027620 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Als de drukte van het moderne leven je te pakken krijgt, heeft Tom Nook een zakelijke onderneming in zijn mouw waarvan hij weet dat je het geweldig zult vinden: zijn gloednieuwe, ultra-exclusieve Nook Inc. Eilandleven-pakket!" ;
+    schema:item NS:games ;
     schema:name "Animal Crossing: New Horizons" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000027620" .
 
-NS:another-code-recollection-70010000072197 schema:brand "Nintendo" ;
+NS:another-code-recollection-70010000072197 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Beleef het volledige verhaal van Ashley Mizuki Robbins in twee avonturen in Another Code: Recollection" ;
+    schema:item NS:games,
+        NS:new ;
     schema:name "Another Code: Recollection" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games,
-        NS:new ;
     schema:sku "70010000072197" .
 
-NS:bayonetta-3-70010000046401 schema:brand "Nintendo" ;
+NS:bayonetta-3-70010000046401 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "De heks is terug… en sterker dan ooit!" ;
+    schema:item NS:games ;
     schema:name "Bayonetta 3" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000046401" .
 
-NS:beenband-000000000010001376 schema:brand "Nintendo" ;
+NS:beenband-000000000010001376 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Het beenbandaccessoire meet je acties in de echte wereld en zet ze om in bewegingen in de game." ;
+    schema:item <https://store.nintendo.nl/nl/consoles/accessories> ;
     schema:name "Beenband" ;
     schema:price 1.099e+01 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/accessories> ;
     schema:sku "000000000010001376" .
 
-NS:bravely-default-ii-70010000028618 schema:brand "Nintendo" ;
+NS:bravely-default-ii-70010000028618 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Vier helden, vier kristallen, één legendarisch avontuur!" ;
+    schema:item NS:games ;
     schema:name "Bravely Default II" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000028618" .
 
-NS:challenger-pack-10-kazuya-P00073 schema:brand "Nintendo" ;
+NS:challenger-pack-10-kazuya-P00073 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Kazuya maakt zich klaar voor het volgende gevecht in Challenger Pack 10." ;
+    schema:item NS:games ;
     schema:name "Challenger Pack 10: Kazuya" ;
     schema:price 5.99e+00 ;
-    schema:product NS:games ;
     schema:sku "P00073" .
 
-NS:challenger-pack-van-min-min-70050000018967 schema:brand "Nintendo" ;
+NS:challenger-pack-van-min-min-70050000018967 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Wie is er op zoek naar actie? De ramenminnende Min Min uit ARMS mengt zich in het gevecht in Challenger Pack 6!" ;
+    schema:item NS:games ;
     schema:name "Challenger Pack van Min Min" ;
     schema:price 5.99e+00 ;
-    schema:product NS:games ;
     schema:sku "70050000018967" .
 
-<https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles/nintendo-switch/nintendo-switch-met-neonblauweneonrode-joy-con-controllers-000000000010002207> schema:brand "Nintendo" ;
+<https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles/nintendo-switch/nintendo-switch-met-neonblauweneonrode-joy-con-controllers-000000000010002207> a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Nintendo Switch is een baanbrekend spelsysteem voor thuis. Voor het eerst kunnen spelers altijd en overal genieten van een volledige spelsysteemervaring thuis." ;
+    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:name "Nintendo Switch met neonblauwe/neonrode Joy-Con-controllers" ;
     schema:price 2.9999e+02 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:sku "000000000010002207" .
 
-NS:fae-farm-P00115 schema:brand "Nintendo" ;
+NS:fae-farm-P00115 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Maak, cultiveer en versier om je gedeelde woning te laten groeien en gebruik spreuken om het betoverde eiland Azoria te verkennen!" ;
+    schema:item NS:games,
+        NS:new ;
     schema:name "Fae Farm" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games,
-        NS:new ;
     schema:sku "P00115" .
 
-NS:game-boy-posterset-000000000010011600 schema:brand "Nintendo" ;
+NS:game-boy-posterset-000000000010011600 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Geef je muren een retro uitstraling met deze Game Boy-posterset met daarop drie klassieke games!" ;
+    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
     schema:name "Game Boy-posterset" ;
     schema:price 0e+00 ;
-    schema:product <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
     schema:sku "000000000010011600" .
 
-NS:gamestudio-P00075 schema:brand "Nintendo" ;
+NS:gamestudio-P00075 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Ontdek hoe je games kunt maken bij Nintendo!" ;
+    schema:item NS:games ;
     schema:name "Gamestudio" ;
     schema:price 2.999e+01 ;
-    schema:product NS:games ;
     schema:sku "P00075" .
 
-<https://store.nintendo.nl/nl/https://www.nintendo.nl/Games/Nintendo-Switch-games/Metroid-Prime-Remastered-2341668.html> schema:brand "Nintendo" ;
+<https://store.nintendo.nl/nl/https://www.nintendo.nl/Games/Nintendo-Switch-games/Metroid-Prime-Remastered-2341668.html> a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "De koelbloedige en bedreven Samus gaat deze missie in haar eentje aan… maar ze is alles behalve alleen." ;
+    schema:item NS:games,
+        NS:new ;
     schema:name "Metroid Prime Remastered" ;
     schema:price 3.999e+01 ;
-    schema:product NS:games,
-        NS:new ;
     schema:sku "P00105" .
 
-NS:kirby-speelkaarten-000000000010001931 schema:brand "Nintendo" ;
+NS:kirby-speelkaarten-000000000010001931 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Speelkaarten van Kirby en zijn vrienden!" ;
+    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
     schema:name "Kirby Speelkaarten" ;
     schema:price 1.749e+01 ;
-    schema:product <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
     schema:sku "000000000010001931" .
 
-NS:kirbys-dream-buffet-sleutelhanger-000000000010010992 schema:brand "Nintendo" ;
+NS:kirbys-dream-buffet-sleutelhanger-000000000010010992 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Met deze schattige Kirby-sleutelhanger, die is geïnspireerd op Kirby's Dream Buffet, zie je er smaakvol uit!" ;
+    schema:item <https://store.nintendo.nl/nl/merchandise/apparel> ;
     schema:name "Kirby's Dream Buffet-sleutelhanger" ;
     schema:price 0e+00 ;
-    schema:product <https://store.nintendo.nl/nl/merchandise/apparel> ;
     schema:sku "000000000010010992" .
 
-NS:kirbys-return-to-dream-land-deluxe-70010000058798 schema:brand "Nintendo" ;
+NS:kirbys-return-to-dream-land-deluxe-70010000058798 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Er komt een luxe versie van Kirby's Adventure Wii!" ;
+    schema:item NS:games ;
     schema:name "Kirby's Return to Dream Land Deluxe" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000058798" .
 
-NS:kirbys-return-to-dream-land-deluxe-muismat-000000000010011641 schema:brand "Nintendo" ;
+NS:kirbys-return-to-dream-land-deluxe-muismat-000000000010011641 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Waan je op de planeet Popstar met deze Kirby’s Return to Dream Land Deluxe-muismat, waarop de roze held in eigen persoon prijkt!" ;
+    schema:item NS:franchises,
+        <https://store.nintendo.nl/nl/merchandise/apparel> ;
     schema:name "Kirby's Return to Dream Land Deluxe-muismat" ;
     schema:price 0e+00 ;
-    schema:product NS:franchises,
-        <https://store.nintendo.nl/nl/merchandise/apparel> ;
     schema:sku "000000000010011641" .
 
-NS:knuffel-mario-tanuki-nintendo-tokyo-exclusive-collection-000000000010004851 schema:brand "Nintendo" ;
+NS:knuffel-mario-tanuki-nintendo-tokyo-exclusive-collection-000000000010004851 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Vier het 35-jarig jubileum van Super Mario Bros. met deze Knuffel Mario Tanuki, exclusief verkrijgbaar in My Nintendo Store." ;
+    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
     schema:name "Knuffel Mario Tanuki - Nintendo Tokyo Exclusive Collection" ;
     schema:price 2.499e+01 ;
-    schema:product <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
     schema:sku "000000000010004851" .
 
-NS:knuffel-propeller-mario-nintendo-tokyo-exclusive-collection-000000000010004852 schema:brand "Nintendo" ;
+NS:knuffel-propeller-mario-nintendo-tokyo-exclusive-collection-000000000010004852 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Vier het 35-jarig jubileum van Super Mario Bros. met deze Knuffel Propeller-Mario, exclusief verkrijgbaar in de My Nintendo Store." ;
+    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
     schema:name "Knuffel Propeller-Mario – Nintendo Tokyo Exclusive Collection" ;
     schema:price 2.499e+01 ;
-    schema:product <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
     schema:sku "000000000010004852" .
 
-NS:mario-kart-8-deluxe-70010000000126 schema:brand "Nintendo" ;
+NS:mario-kart-8-deluxe-70010000000126 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Geniet van de grootste Mario Kart tot nu toe en race altijd en overal, met iedereen in Mario Kart 8 Deluxe, alleen op de Nintendo Switch!" ;
+    schema:item NS:games ;
     schema:name "Mario Kart™ 8 Deluxe" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000000126" .
 
-NS:metroid-dread-70010000042925 schema:brand "Nintendo" ;
+NS:metroid-dread-70010000042925 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Sluit je aan bij premiejager Samus Aran terwijl ze ontsnapt aan een dodelijke buitenaardse wereld die wordt geplaagd door een mechanische dreiging in Metroid Dread voor de Nintendo Switch. Bestel en ontvang een GRATIS sleutelhanger, stickervel en dubbelzijdige A2-poster (zolang de voorraad strekt)." ;
+    schema:item NS:games ;
     schema:name "Metroid Dread" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000042925" .
 
-NS:minecraft-legends-deluxe-edition-P00106 schema:brand "Nintendo" ;
+NS:minecraft-legends-deluxe-edition-P00106 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "De Nether-corruptie van de Piglins verspreidt zich over de Bovenwereld en verschroeit alles wat het aanraakt." ;
+    schema:item NS:games,
+        NS:new ;
     schema:name "Minecraft Legends Deluxe Edition" ;
     schema:price 4.999e+01 ;
-    schema:product NS:games,
-        NS:new ;
     schema:sku "P00106" .
 
-NS:monster-hunter-rise-70010000029015 schema:brand "Nintendo" ;
+NS:monster-hunter-rise-70010000029015 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Demo voor de immens grote DLC uitbreiding Sunbreak nu beschikbaar!" ;
+    schema:item NS:games ;
     schema:name "Monster Hunter Rise" ;
     schema:price 3.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000029015" .
 
-NS:nintendo-64-paperclips-000000000010009889 schema:brand "Nintendo" ;
+NS:nintendo-64-paperclips-000000000010009889 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Deze paperclips in de vorm van Nintendo 64-controllers zijn nu exclusief verkrijgbaar op My Nintendo!" ;
+    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
     schema:name "Nintendo 64-paperclips" ;
     schema:price 0e+00 ;
-    schema:product <https://store.nintendo.nl/nl/merchandise/home-and-gifts> ;
     schema:sku "000000000010009889" .
 
-NS:nintendo-switch-neonblauwneonrood-animal-crossing-new-horizons-bundel-B00403 schema:brand "Nintendo" ;
+NS:nintendo-switch-neonblauwneonrood-animal-crossing-new-horizons-bundel-B00403 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Deze systeembundel bevat de Nintendo Switch met neonblauw/neonrood Joy-Con-controllers, de game Animal Crossing: New Horizons, en een Nintendo Switch-hardcase - Deluxe Elite Edition." ;
+    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> ;
     schema:name "Nintendo Switch (neonblauw/neonrood) Animal Crossing: New Horizons-bundel" ;
     schema:price 3.5999e+02 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> ;
     schema:sku "B00403" .
 
-NS:nintendo-switch-neonblauwneonrood-luigis-mansion-3-bundel-B00418 schema:brand "Nintendo" ;
+NS:nintendo-switch-neonblauwneonrood-luigis-mansion-3-bundel-B00418 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Deze Nintendo Switch met neonblauwe/neonrode Joy-Con-controllers wordt geleverd met een downloadcode voor Luigi's Mansion 3, plus een Nintendo Switch-hardcase - Deluxe Elite Edition." ;
+    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> ;
     schema:name "Nintendo Switch (neonblauw/neonrood) Luigi's Mansion 3-bundel" ;
     schema:price 3.5999e+02 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> ;
     schema:sku "B00418" .
 
-NS:nintendo-switch-oled-model-mario-edition-rood-000000000010011772 schema:brand "Nintendo" ;
+NS:nintendo-switch-oled-model-mario-edition-rood-000000000010011772 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een levendig 7-inch OLED-scherm met levendige kleuren." ;
+    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:name "Nintendo Switch – OLED-Model Mario Edition (rood)" ;
     schema:price 3.4999e+02 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:sku "000000000010011772" .
 
-NS:nintendo-switch-oled-model-neonblauwneonrood-000000000010007455 schema:brand "Nintendo" ;
+NS:nintendo-switch-oled-model-neonblauwneonrood-000000000010007455 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een OLED-scherm van 7 inch met levendige kleuren." ;
+    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:name "Nintendo Switch - OLED-model (neonblauw/neonrood)" ;
     schema:price 3.4999e+02 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:sku "000000000010007455" .
 
-NS:nintendo-switch-oled-model-pokemon-scarlet-and-violet-edition-000000000010009862 schema:brand "Nintendo" ;
+NS:nintendo-switch-oled-model-pokemon-scarlet-and-violet-edition-000000000010009862 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een levendig 7-inch OLED-scherm met levendige kleuren." ;
+    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:name "Nintendo Switch – OLED Model Pokémon Scarlet & Violet Edition" ;
     schema:price 3.5999e+02 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:sku "000000000010009862" .
 
-NS:nintendo-switch-oled-model-splatoon-3-edition-000000000010009642 schema:brand "Nintendo" ;
+NS:nintendo-switch-oled-model-splatoon-3-edition-000000000010009642 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een levendig 7-inch OLED-scherm met levendige kleuren." ;
+    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:name "Nintendo Switch™ – OLED-Model Splatoon 3 Edition" ;
     schema:price 3.5999e+02 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:sku "000000000010009642" .
 
-NS:nintendo-switch-oled-model-the-legend-of-zelda-tears-of-the-kingdom-edition-000000000010009866 schema:brand "Nintendo" ;
+NS:nintendo-switch-oled-model-the-legend-of-zelda-tears-of-the-kingdom-edition-000000000010009866 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een levendig 7-inch OLED-scherm met levendige kleuren." ;
+    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:name "Nintendo Switch – OLED-model The Legend of Zelda: Tears of the Kingdom Edition " ;
     schema:price 3.5999e+02 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:sku "000000000010009866" .
 
-NS:nintendo-switch-oled-model-the-legend-of-zelda-tears-of-the-kingdom-edition-the-legend-of-zelda-tears-of-the-kingdom-bundel-B00396 schema:brand "Nintendo" ;
+NS:nintendo-switch-oled-model-the-legend-of-zelda-tears-of-the-kingdom-edition-the-legend-of-zelda-tears-of-the-kingdom-bundel-B00396 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Deze systeembundel bevat de Nintendo Switch – OLED-model The Legend of Zelda: Tears of the Kingdom Edition, de game The Legend of Zelda: Tears of the Kingdom, en een Nintendo Switch-hardcase - Deluxe Elite Edition." ;
-    schema:name "Nintendo Switch – OLED-model The Legend of Zelda: Tears of the Kingdom Edition + The Legend of Zelda: Tears of the Kingdom-bundel" ;
-    schema:price 4.2999e+02 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles>,
+    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles>,
         NS:franchises,
         NS:new ;
+    schema:name "Nintendo Switch – OLED-model The Legend of Zelda: Tears of the Kingdom Edition + The Legend of Zelda: Tears of the Kingdom-bundel" ;
+    schema:price 4.2999e+02 ;
     schema:sku "B00396" .
 
-NS:nintendo-switch-oled-model-wit-000000000010007454 schema:brand "Nintendo" ;
+NS:nintendo-switch-oled-model-wit-000000000010007454 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Met de Nintendo Switch – OLED-model kun je altijd en overal genieten van je favoriete games, met een levendig 7-inch OLED-scherm met levendige kleuren." ;
+    schema:item <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:name "Nintendo Switch - OLED-model (wit)" ;
     schema:price 3.4999e+02 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> ;
     schema:sku "000000000010007454" .
 
-NS:nintendo-switch-pro-controller-the-legend-of-zelda-tears-of-the-kingdom-edition-000000000010009831 schema:brand "Nintendo" ;
+NS:nintendo-switch-pro-controller-the-legend-of-zelda-tears-of-the-kingdom-edition-000000000010009831 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Deze Nintendo Switch-Pro-controller heeft een design dat is geïnspireerd door The Legend of Zelda: Tears of the Kingdom." ;
+    schema:item <https://store.nintendo.nl/nl/consoles/accessories> ;
     schema:name "Nintendo Switch-Pro-controller (The Legend of Zelda: Tears of the Kingdom Edition)" ;
     schema:price 7.499e+01 ;
-    schema:product <https://store.nintendo.nl/nl/consoles/accessories> ;
     schema:sku "000000000010009831" .
 
-NS:nintendo-switch-sports-P00086 schema:brand "Nintendo" ;
+NS:nintendo-switch-sports-P00086 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Zwaai, trap en smash je een weg naar de overwinning met Nintendo Switch Sports, een verzameling sporten voor de Nintendo Switch die je flink in beweging houdt!" ;
+    schema:item NS:games ;
     schema:name "Nintendo Switch Sports" ;
     schema:price 3.999e+01 ;
-    schema:product NS:games ;
     schema:sku "P00086" .
 
-NS:pikmin-4-70010000005306 schema:brand "Nintendo" ;
+NS:pikmin-4-70010000005306 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Er bloeit een nieuw avontuur op!" ;
+    schema:item NS:games,
+        NS:new ;
     schema:name "Pikmin 4" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games,
-        NS:new ;
     schema:sku "70010000005306" .
 
-NS:pikmin-4-theedoek-000000000010012315 schema:brand "Nintendo" ;
+NS:pikmin-4-theedoek-000000000010012315 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Laat de Pikmin meehelpen bij het afdrogen met deze Pikmin 4-theedoek!" ;
+    schema:item <https://store.nintendo.nl/nl/merchandise/home-and-gifts>,
+        NS:new ;
     schema:name "Pikmin 4-theedoek" ;
     schema:price 0e+00 ;
-    schema:product <https://store.nintendo.nl/nl/merchandise/home-and-gifts>,
-        NS:new ;
     schema:sku "000000000010012315" .
 
-NS:pokemon-legends-arceus-P00045 schema:brand "Nintendo" ;
-    schema:description """Vang, volg en onderzoek wilde Pokémon om de eerste Pokédex van de regio Sinnoh in Pokémon Legends: Arceus te maken en te voltooien._x000D_
+NS:pokemon-legends-arceus-P00045 a schema:Product ;
+    schema:brand "Nintendo" ;
+    schema:description """Vang, volg en onderzoek wilde Pokémon om de eerste Pokédex van de regio Sinnoh in Pokémon Legends: Arceus te maken en te voltooien._x000D_\r
 """ ;
+    schema:item NS:games ;
     schema:name "Pokémon Legends: Arceus" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "P00045" .
 
-NS:pokemon-scarlet-70010000053967 schema:brand "Nintendo" ;
+NS:pokemon-scarlet-70010000053967 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Pokémon Scarlet en Pokémon Violet, de nieuwste avonturen in de Pokémon-serie, komen op 18 november naar de Nintendo Switch." ;
+    schema:item NS:games ;
     schema:name "Pokémon Scarlet" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000053967" .
 
-NS:pokemon-sword-en-pokemon-shield-expansion-pass-P00008 schema:brand "Nintendo" ;
+NS:pokemon-sword-en-pokemon-shield-expansion-pass-P00008 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Het wilde avontuur gaat verder met de uitbreidingspas van Pokémon Sword en Pokémon Shield!" ;
+    schema:item NS:games ;
     schema:name "Pokémon Sword en Pokémon Shield - Expansion Pass" ;
     schema:price 2.999e+01 ;
-    schema:product NS:games ;
     schema:sku "P00008" .
 
-NS:pokemon-violet-70010000053972 schema:brand "Nintendo" ;
+NS:pokemon-violet-70010000053972 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Pokémon Scarlet en Pokémon Violet, de nieuwste avonturen in de Pokémon-serie, komen op 18 november naar de Nintendo Switch." ;
+    schema:item NS:games ;
     schema:name "Pokémon Violet" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000053972" .
 
-NS:princess-peach-showtime-70010000005021 schema:brand "Nintendo" ;
+NS:princess-peach-showtime-70010000005021 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Prinses Peach staat in de schijnwerpers!" ;
+    schema:item NS:franchises,
+        NS:games,
+        NS:new ;
     schema:name "Princess Peach: Showtime!" ;
     schema:price 5.999e+01 ;
-    schema:product NS:franchises,
-        NS:games,
-        NS:new ;
     schema:sku "70010000005021" .
 
-NS:ring-fit-adventure-000000000010001992 schema:brand "Nintendo" ;
+NS:ring-fit-adventure-000000000010001992 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Ring Fit Adventure is een nieuw soort avonturenspel dat naar Nintendo Switch komt en gebruikmaakt van unieke accessoires die de bewegingen van de speler in de echte wereld detecteren en meten en deze omzetten in acties in het spel." ;
+    schema:item NS:games ;
     schema:name "Ring Fit Adventure" ;
     schema:price 7.999e+01 ;
-    schema:product NS:games ;
     schema:sku "000000000010001992" .
 
-NS:shin-megami-tensei-v-P00070 schema:brand "Nintendo" ;
-    schema:description """Speel in Shin Megami Tensei V als een middelbare scholier die nieuw gevonden krachten moet gebruiken om zich met behulp van een opdrachtensysteem door een met demonen besmette woestenij te vechten._x000D_
+NS:shin-megami-tensei-v-P00070 a schema:Product ;
+    schema:brand "Nintendo" ;
+    schema:description """Speel in Shin Megami Tensei V als een middelbare scholier die nieuw gevonden krachten moet gebruiken om zich met behulp van een opdrachtensysteem door een met demonen besmette woestenij te vechten._x000D_\r
 """ ;
+    schema:item NS:games ;
     schema:name "Shin Megami Tensei V" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "P00070" .
 
-NS:splatoon-3-70010000046396 schema:brand "Nintendo" ;
-    schema:description """Pinta as Splatlands no próximo Splatoon! Splatoon 3 chega à Nintendo Switch a 9 de setembro!							_x000D_
+NS:splatoon-3-70010000046396 a schema:Product ;
+    schema:brand "Nintendo" ;
+    schema:description """Pinta as Splatlands no próximo Splatoon! Splatoon 3 chega à Nintendo Switch a 9 de setembro!							_x000D_\r
 """ ;
+    schema:item NS:franchises,
+        NS:games ;
     schema:name "Splatoon 3" ;
     schema:price 5.999e+01 ;
-    schema:product NS:franchises,
-        NS:games ;
     schema:sku "70010000046396" .
 
-NS:super-mario-bros-wonder-70010000068689 schema:brand "Nintendo" ;
+NS:super-mario-bros-wonder-70010000068689 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Verwacht het onverwachte!" ;
+    schema:item NS:franchises ;
     schema:name "Super Mario Bros. Wonder" ;
     schema:price 5.999e+01 ;
-    schema:product NS:franchises ;
     schema:sku "70010000068689" .
 
-NS:super-mario-draagtas-000000000010012062 schema:brand "Nintendo" ;
+NS:super-mario-draagtas-000000000010012062 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Spring je volgende avontuur tegemoet met deze Super Mario-tas om je arm!" ;
+    schema:item <https://store.nintendo.nl/nl/merchandise/apparel> ;
     schema:name "Super Mario-draagtas" ;
     schema:price 0e+00 ;
-    schema:product <https://store.nintendo.nl/nl/merchandise/apparel> ;
     schema:sku "000000000010012062" .
 
-NS:super-mario-party-70010000014063 schema:brand "Nintendo" ;
+NS:super-mario-party-70010000014063 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "De Mario Party-serie komt naar het Nintendo Switch-systeem met extreem veel pret voor iedereen!" ;
+    schema:item NS:games ;
     schema:name "Super Mario Party™" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000014063" .
 
-NS:super-mario-rpg-70010000068684 schema:brand "Nintendo" ;
+NS:super-mario-rpg-70010000068684 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Wensen kunnen uitkomen in Super Mario RPG!" ;
-    schema:name "Super Mario RPG" ;
-    schema:price 5.999e+01 ;
-    schema:product NS:franchises,
+    schema:item NS:franchises,
         NS:games,
         NS:new ;
+    schema:name "Super Mario RPG" ;
+    schema:price 5.999e+01 ;
     schema:sku "70010000068684" .
 
-NS:t-shirt-splatoon-3-splatfest-water-P00101 schema:brand "Nintendo" ;
+NS:t-shirt-splatoon-3-splatfest-water-P00101 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Laat de wereld met dit T-shirt Splatoon 3 Splatfest 'Water' zien welke kant jij kiest in het Splatfest Splatoon x Pokémon." ;
+    schema:item NS:franchises,
+        <https://store.nintendo.nl/nl/merchandise/apparel> ;
     schema:name "T-shirt Splatoon 3 Splatfest 'Water'" ;
     schema:price 1.999e+01 ;
-    schema:product NS:franchises,
-        <https://store.nintendo.nl/nl/merchandise/apparel> ;
     schema:sku "P00101" .
 
-NS:tokyo-mirage-sessions-fe-encore-70010000023326 schema:brand "Nintendo" ;
+NS:tokyo-mirage-sessions-fe-encore-70010000023326 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Twee werelden. Eén heldhaftige roeping." ;
+    schema:item NS:games ;
     schema:name "Tokyo Mirage Sessions ♯FE Encore" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000023326" .
 
-NS:triangle-strategy-70010000046321 schema:brand "Nintendo" ;
+NS:triangle-strategy-70010000046321 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Waar brengt jouw gevoel van gerechtigheid je naartoe in TRIANGLE STRATEGY, een tactische RPG van Square Enix voor de Nintendo Switch? Bestel en ontvang een GRATIS verzamelkaartenset (zolang de voorraad strekt)." ;
+    schema:item NS:games ;
     schema:name "Triangle Strategy™" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000046321" .
 
-NS:uitbreidingspas-fire-emblem-engage-P00102 schema:brand "Nintendo" ;
+NS:uitbreidingspas-fire-emblem-engage-P00102 a schema:Product ;
+    schema:brand "Nintendo" ;
     schema:description "Met de Fire Emblem Engage-uitbreidingspas kun je nieuwe Emblem-helden gebruiken en nieuwe gevechten aangaan." ;
+    schema:item NS:games ;
     schema:name "Uitbreidingspas Fire Emblem Engage" ;
     schema:price 2.999e+01 ;
-    schema:product NS:games ;
     schema:sku "P00102" .
 
-NS:xenoblade-chronicles-3-70010000053337 schema:brand "Nintendo" ;
-    schema:description """"Vechten om te leven... en leven om te vechten."_x000D_
-Bestel en ontvang een GRATIS notitieboekje (zolang de voorraad strekt)._x000D_
+NS:xenoblade-chronicles-3-70010000053337 a schema:Product ;
+    schema:brand "Nintendo" ;
+    schema:description """"Vechten om te leven... en leven om te vechten."_x000D_\r
+Bestel en ontvang een GRATIS notitieboekje (zolang de voorraad strekt)._x000D_\r
 """ ;
+    schema:item NS:games ;
     schema:name "Xenoblade Chronicles 3" ;
     schema:price 5.999e+01 ;
-    schema:product NS:games ;
     schema:sku "70010000053337" .
 
 <https://store.nintendo.nl/nl/consoles/accessories> rdfs:subClassOf NS:consoles .
 
-NS:merchandise a "Nintendo" .
+NS:merchandise a schema:ProductGroup .
 
-NS:consoles a "Nintendo" .
+NS:consoles a schema:ProductGroup .
 
 <https://store.nintendo.nl/nl/consoles/nintendo-switch-bundles> rdfs:subClassOf NS:consoles .
 
@@ -408,9 +461,9 @@ NS:consoles a "Nintendo" .
 
 <https://store.nintendo.nl/nl/consoles/nintendo-switch-consoles> rdfs:subClassOf NS:consoles .
 
-NS:franchises a "Nintendo" .
+NS:franchises a schema:ProductGroup .
 
-NS:new a "Nintendo" .
+NS:new a schema:ProductGroup .
 
-NS:games a "Nintendo" .
+NS:games a schema:ProductGroup .
 
