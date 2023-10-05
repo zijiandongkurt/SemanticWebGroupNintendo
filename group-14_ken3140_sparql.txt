@@ -8,7 +8,7 @@ SELECT ?name ?subcategory ?category ?brand
 WHERE {
   ?item schema:brand ?brand .                   #Get the brand
   ?item schema:name ?name.                      #Get item name
-  ?item schema:item ?subcategory.            #Get the category.
+  ?item schema:isVariantOf ?subcategory.            #Get the category.
 
 OPTIONAL {?subcategory rdfs:subClassOf ?category }    # if there exist subcategory, also get it.
   }
@@ -36,14 +36,14 @@ WHERE {
     WHERE {
     ?item schema:brand ?brand . #choose same brand
     ?item schema:name ?name .
-    ?item schema:item ?subcategory .
+    ?item schema:isVariantOf ?subcategory .
     }
   GROUP BY ?subcategory
   }
 
   ?sampleItem schema:brand ?brand .
   ?sampleItem schema:name ?name .
-  ?sampleItem schema:item ?subcategory .
+  ?sampleItem schema:isVariantOf ?subcategory .
   }
 ORDER BY RAND()
 
@@ -101,13 +101,13 @@ WHERE {
 
   {SELECT ?category #Here we choose a random category
     WHERE {
-      ?item schema:item ?category .
+      ?item schema:isVariantOf ?category .
     }
     ORDER BY RAND()
     LIMIT 1
   }
 
-  ?item schema:item ?category.    
+  ?item schema:isVariantOf ?category.    
   ?item schema:price ?price .
 
 }
@@ -147,13 +147,13 @@ WHERE {
     #Here we choose a random category
     SELECT ?category
     WHERE {
-      ?item schema:item ?category .
+      ?item schema:isVariantOf ?category .
     }
     ORDER BY RAND()
     LIMIT 1
   }
 
-  ?item schema:item ?category.    #Get all items within that category
+  ?item schema:isVariantOf ?category.    #Get all items within that category
   ?item schema:price ?price .
 
 }
@@ -225,8 +225,8 @@ WHERE {
     ?item1 schema:name ?name1.
     ?item2 schema:name ?name2.
 
-    ?item1 schema:item ?category.
-    ?item2 schema:item ?category.
+    ?item1 schema:isVariantOf ?category.
+    ?item2 schema:isVariantOf ?category.
 
     FILTER (ABS(?price1 - ?price2) <= 1)
 }
@@ -254,7 +254,7 @@ Query G:
 
 SELECT ?name  ?price
   WHERE {
-    ?switch schema:item <https://store.nintendo.nl/nl/nintendo-switch-consoles>.
+    ?switch schema:isVariantOf <https://store.nintendo.nl/nl/nintendo-switch-consoles>.
     ?switch schema:name ?name .
     ?switch schema:price ?price .
 }
